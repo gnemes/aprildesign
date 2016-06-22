@@ -1,0 +1,398 @@
+a {
+  background: transparent;
+  color: #747474;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+section, header {
+    position: relative;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.icon-holder {
+    display: inline-block;
+    height: 45px;
+    position: relative;
+    width: 32px;
+    z-index: 200;
+}
+
+.icon-holder .triangle::before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0px, -50%);
+}
+
+.icon-holder .triangle, .icon-holder .triangle::before, .icon-holder .triangle::after {
+    border-top-right-radius: 30%;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-holder .triangle::before, .icon-holder .triangle::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+}
+
+.icon-holder .triangle::before {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.icon-holder .triangle::after {
+    transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+.icon-holder .triangle, .icon-holder .triangle::before, .icon-holder .triangle::after {
+    border-top-right-radius: 30%;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-holder .triangle::before, .icon-holder .triangle::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+}
+
+.icon-holder .triangle::after {
+    box-shadow: -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.icon-holder .triangle, .icon-holder .triangle::before, .icon-holder .triangle::after {
+    border-top-right-radius: 30%;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-holder .triangle {
+    background-color: #1da796;
+    box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+
+.icon-holder i {
+    bottom: 0;
+    color: #ffffff;
+    font-size: 20px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 20px;
+    z-index: 100;
+}
+
+.iconic-nav-bar .bar {
+    background-color: #f4f4f4;
+    border-radius: 25px 4px 4px 0;
+    display: block;
+    padding: 3px 0 3px 50px;
+    position: relative;
+    top: -46px;
+}
+
+.iconic-nav-bar .bar h2 {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500 !important;
+    line-height: 25px;
+}
+
+.product-item {
+    display: inline-block;
+    padding: 0 15px;
+    width: 285px;
+}
+
+.products-holder.simple-grid .product-item {
+    float: none;
+    margin-bottom: 30px;
+    padding: 0;
+    width: auto;
+}
+
+.product-item .head {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #e3e8e4;
+    border-color: rgba(0, 0, 0, 0.07) rgba(0, 0, 0, 0.07) -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 0 0;
+    border-style: solid solid none;
+    border-width: 5px 5px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.le-ribbon, .le-ribbon.right {
+    right: -36px;
+    transform: rotate(45deg);
+}
+
+.le-ribbon {
+    display: inline-block;
+    font-weight: 700 !important;
+    height: 55px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -8px;
+    width: 110px;
+    z-index: 500;
+}
+
+.le-ribbon.blue::before {
+    border-color: transparent transparent #407ac5;
+}
+
+.le-ribbon.red::before {
+    border-color: transparent transparent red;
+}
+
+.le-ribbon::before {
+    border-style: solid;
+    border-width: 0 55px 55px;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.le-ribbon span {
+    bottom: 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    height: 12px;
+    left: 0;
+    line-height: 12px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 12px;
+    width: 50%;
+}
+
+.product-item .head .thumb {
+    overflow: hidden;
+}
+
+.product-item .head .price {
+    left: 5%;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 5%;
+}
+
+.product-item .price-current, .product-item .price-old {
+    background-clip: padding-box;
+    border-radius: 4px;
+    box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 3px 5px;
+    position: relative;
+}
+
+.product-item .price-old {
+    background-color: #abb0ac;
+    color: #747474;
+    display: table;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.product-item .price-current {
+    background-color: #8bb040;
+    font-size: 16px;
+    font-weight: 500 !important;
+}
+
+.product-item .head .star-holder {
+    bottom: -100px;
+    left: 5%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+}
+
+.product-item .body {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f4f4f4;
+    border-color: -moz-use-text-color rgba(0, 0, 0, 0.07) rgba(0, 0, 0, 0.07);
+    border-image: none;
+    border-radius: 0 0 6px 6px;
+    border-style: none solid solid;
+    border-width: 0 5px 5px;
+    padding: 20px;
+}
+
+.product-item .body h3 {
+    font-size: 18px;
+    line-height: 26px;
+    min-height: 44px;
+    text-transform: capitalize;
+}
+
+.product-item .body .excerpt {
+    color: #747474;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+.merged-buttons {
+    text-align: center;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a, button, a:hover, button:hover, a:focus, button:focus, a.active, button.active {
+    outline: medium none !important;
+}
+
+.le-btn {
+    background-clip: padding-box;
+    background-color: #1da796;
+    border: medium none;
+    border-radius: 4px;
+    box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+}
+
+.merged-buttons button, .merged-buttons .le-btn {
+    display: inline-block;
+}
+
+.product-item .body button {
+    font-size: 11px;
+    padding: 8px;
+}
+
+.merged-buttons button:first-child, .merged-buttons .le-btn:first-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.merged-buttons button:last-child, .merged-buttons .le-btn:last-child {
+    background-color: #199182 !important;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -5px;
+}
+
+.btn-add-to-cart::before {
+    content: "";
+    font-family: fontawesome;
+}
+
+.btn-iconic::before {
+    font-family: fontawesome;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    width: 18px;
+}
+
+.btn-add-to-wishlist::before {
+    content: "";
+    font-family: fontawesome;
+}
+
+.le-badge.orange {
+    background-color: orange;
+}
+
+.le-badge.green {
+    background-color: #59b210;
+}
+
+.le-badge {
+    border-radius: 200px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700 !important;
+    height: 50px;
+    line-height: 20px;
+    position: absolute;
+    right: 8%;
+    text-transform: uppercase;
+    top: 8%;
+    width: 50px;
+    z-index: 100;
+}
+
+.le-badge span {
+    bottom: 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    left: 0;
+    line-height: 12px;
+    margin: auto;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 27%;
+    vertical-align: middle;
+    width: 100%;
+}

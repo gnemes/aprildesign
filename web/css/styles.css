@@ -1,0 +1,146 @@
+/* Base */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    color: #323232;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::-moz-selection {
+    background-color: #1da796;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+img {
+    max-width: 100%;
+}
+a:link, a:visited {
+    outline: 0;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+a img {
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+/* Header */
+.header {
+    height: 100px;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+
+.navbar {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.navbar-default {
+    background: rgba(55, 55, 55, 0.85);
+    border: none;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+}
+.navbar-nav {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #eee;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+}
+
+a:link,a:visited,.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus,a:hover,a:active,.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus{
+	color:#ddd;
+}
+
+.spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
+    background: #CCC;
+}
+
+/* Fixed Backgrounds */
+.cd-fixed-bg {
+    min-height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+    background-image: url("../img/aprildesign1.png");
+}
+
+.cd-fixed-bg.cd-bg-2 {
+    background-image: url("../img/aprildesign2.png");
+}
+
+.cd-fixed-bg.cd-bg-3 {
+    background-image: url("../img/aprildesign3.jpg");
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600 !important;
+    margin: 0;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0 none;
+}
